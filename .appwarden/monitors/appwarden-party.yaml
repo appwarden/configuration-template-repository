@@ -1,0 +1,16 @@
+hostname: appwarden.party
+version: 1
+dns-monitor:
+  records:
+    - name: appwarden.party
+      type: A
+      content: 76.76.21.21
+websites:
+  values:
+    - url: appwarden.party
+      status: 200
+      headers:
+        - key: Content-Type
+          value: text/html; charset=utf-8
+        - key: Server
+          value: Vercel
