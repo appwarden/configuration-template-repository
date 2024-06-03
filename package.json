@@ -1,8 +1,6 @@
 {
-  "name": "@appwarden/monitor-configuration",
+  "name": "Appwarden configuration",
   "version": "1.0.0",
-  "description": "",
-  "scripts": {},
-  "keywords": [],
+  "description": "Configuration for my Appwarden monitors",
   "license": "MIT"
 }
