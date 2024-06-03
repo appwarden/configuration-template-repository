@@ -1,16 +1,16 @@
 hostname: appwarden.online
 version: 1
-dns-monitor:
-  records:
+dns:
+  monitors:
     - name: appwarden.online
       type: A
       content: 76.76.21.21
 websites:
-  values:
+  monitors:
     - url: appwarden.online
       status: 200
       headers:
         - key: Content-Type
           value: text/html; charset=utf-8
         - key: Server
-          value: Vercel
+          value: cloudflare

@@ -1,16 +1,18 @@
 hostname: appwarden.io
 version: 1
-dns-monitor:
-  records:
+dns:
+  monitors:
     - name: appwarden.io
       type: A
-      content: 76.76.21.21
+      content:
+        - content: 104.21.73.192
+        - content: 172.67.165.113
 websites:
-  values:
+  monitors:
     - url: appwarden.io
       status: 200
       headers:
         - key: Content-Type
           value: text/html; charset=utf-8
         - key: Server
-          value: Vercel
+          value: cloudflare
