@@ -1,15 +1,15 @@
-hostname: appwarden.io
+hostname: appwarden.party
 version: 1
 dns:
   monitors:
-    - name: appwarden.io
+    - name: appwarden.party
       type: A
       content:
-        - content: 104.21.73.192
-        - content: 172.67.165.113
+        - content: 104.21.2.153
+        - content: 172.67.129.87
 websites:
   monitors:
-    - url: appwarden.io
+    - url: appwarden.party
       status: 200
       headers:
         - key: Content-Type
