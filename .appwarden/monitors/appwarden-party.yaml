@@ -12,7 +12,7 @@ websites:
     - url: appwarden.party
       status: 200
       headers:
-        - key: Content-Type
+        - name: Content-Type
           value: text/html; charset=utf-8
-        - key: Server
+        - name: Server
           value: cloudflare
