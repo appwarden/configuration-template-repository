@@ -2,5 +2,8 @@
   "name": "appwarden-configuration",
   "version": "1.0.0",
   "description": "Configuration for my Appwarden monitors",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "appwarden": "1.2.0"
+  }
 }
