@@ -1,8 +1,10 @@
-# Appwarden Monitoring Configuration
+# Appwarden Domain Configuration Repository
+
+> Read the docs [to learn more](http://appwarden.io/docs/guides/domain-configuration-management)
 
 ## Getting Started
 
-This repository contains your Appwarden monitoring configuration files. Each file in `.appwarden/monitors` describes the monitoring configuration for a single domain like in the following diagram.
+This repository contains your Appwarden domain configuration files. Each file in `.appwarden/monitors` describes the domain configuration for a single domain like in the following diagram.
 
 ```
 .appwarden/
@@ -12,13 +14,13 @@ This repository contains your Appwarden monitoring configuration files. Each fil
     └── your-docs-com.yml
 ```
 
-To generate pre-populated monitoring configurations for your domains, replace the example domains with your own in the following command:
+To generate pre-populated domain configurations for your domains, replace the example domains with your own in the following command:
 
 ```
 npx appwarden init -d your-api.com -d your-dapp.com -d your-docs.com
 ```
 
-A monitoring configuration file contains two top level sections, `dns` and `websites`, that contain lists of `monitors` like so
+A domain configuration file contains two top level sections, `dns` and `websites`, that contain lists of `monitors` like so
 
 ```yml
 # your-api-com.yml
@@ -45,13 +47,11 @@ websites:
           validator: starts-withxx
 ```
 
-### Monitoring configuration rules:
+### Domain configuration rules:
 
 - DNS records may be listed individually or grouped together for convenience
 - Any monitor may contain a `comment` field to add information about the entry
 - Any monitor may contain a validator field
-
-To learn more about
 
 ## Finishing up
 
@@ -60,4 +60,6 @@ After generating your Appwarden monitor configuration files,
 1. Ensure the Appwarden [Discord bot](https://appwarden.io/add-appwarden-to-discord) is installed in your Discord server
 1. Ensure the Appwarden [Github app](https://github.com/apps/appwarden) is installed in your organization
 1. Inspect and modify the configuration files to your satisfaction
-1. Create a new branch with your monitoring configuration changes and open a pull request to the `main` brach. Then follow the instructions from the Appwarden bot.
+1. Create a new branch with your domain configuration changes and open a pull request to the `main` brach. Then follow the instructions from the Appwarden bot.
+
+> Read the docs [to learn more ](https://appwarden.io/docs/guides/domain-configuration-management)
